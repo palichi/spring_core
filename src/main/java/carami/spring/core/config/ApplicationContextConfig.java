@@ -1,5 +1,6 @@
 package carami.spring.core.config;
 
+import carami.spring.core.examples.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,4 +13,17 @@ public class ApplicationContextConfig {
         return "carami";
     }
 
+    @Bean
+    public User user1(String name) {
+        User user = new User();
+        user.setName(name);
+        return user;
+    }
+
+    @Bean
+    public User user2() {
+        User user = new User();
+        user.setName("홍길동");
+        return user;
+    }
 }
