@@ -9,10 +9,11 @@ public class SpringApplication {
 
     public static void main(String args[]) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
-        String name = (String)context.getBean("name");
+        User user1 = (User)context.getBean("user1");
+        System.out.println(user1.getName());
 
-        System.out.println("name : " + name);
-
+        User user2 = (User)context.getBean("user2");
+        System.out.println(user2.getName());
         context.close();
     }
 }
