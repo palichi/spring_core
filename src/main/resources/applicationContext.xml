@@ -6,4 +6,12 @@
     <bean id="name" class="java.lang.String">
         <constructor-arg value="carami"/>
     </bean>
+
+    <bean id="user1" class="carami.spring.core.examples.User">
+        <property name="name" ref="name"/>
+    </bean>
+
+    <bean id="user2" class="carami.spring.core.examples.User">
+        <property name="name" value="홍길동"/>
+    </bean>
 </beans>
