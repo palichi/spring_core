@@ -26,4 +26,16 @@ public class ApplicationContextConfig {
         user.setName("홍길동");
         return user;
     }
+
+    @Bean
+    public User user3(String name) {
+        User user = new User(name);
+        return user;
+    }
+
+    @Bean
+    public User user4() {
+        User user = new User("홍길동");
+        return user;
+    }
 }

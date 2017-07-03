@@ -14,4 +14,12 @@
     <bean id="user2" class="carami.spring.core.examples.User">
         <property name="name" value="홍길동"/>
     </bean>
+
+    <bean id="user3" class="carami.spring.core.examples.User">
+        <constructor-arg index="0" ref="name"/>
+    </bean>
+
+    <bean id="user4" class="carami.spring.core.examples.User">
+        <constructor-arg index="0" value="홍길동"/>
+    </bean>
 </beans>

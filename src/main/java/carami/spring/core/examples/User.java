@@ -11,6 +11,10 @@ public class User {
 
     }
 
+    public User(String name){
+        this.name = name;
+    }
+
     // private한 필드를 접근하기 위한 seter, getter메소드가 있어야 한다.
     public String getName() {
         return name;
