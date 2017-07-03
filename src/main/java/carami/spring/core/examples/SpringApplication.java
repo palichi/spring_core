@@ -12,8 +12,10 @@ public class SpringApplication {
 
         AnnotationConfigApplicationContext context1 = new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
         String name = (String)context1.getBean("name");
+        System.out.println(name);
         context1.close();
 
+        System.out.println("---------------------------------------------------");
 
         ClassPathXmlApplicationContext context2 = new ClassPathXmlApplicationContext(CONTEXT_PATH);
         User user1 = (User)context2.getBean("user1");
