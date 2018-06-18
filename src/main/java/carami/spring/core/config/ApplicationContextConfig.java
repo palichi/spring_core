@@ -1,9 +1,10 @@
 package carami.spring.core.config;
 
-import carami.spring.core.examples.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+
+import src.main.java.carami.spring.core.examples.User;
 
 @Configuration
 @ComponentScan(basePackages = "carami.spring.core")
